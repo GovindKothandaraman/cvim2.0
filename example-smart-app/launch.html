@@ -27,7 +27,7 @@
     <script>
       //const queryString = window.location.search;
       //const urlParams = new URLSearchParams(queryString);
-      console.log("entering launch.html with full URL" + window.location.href);
+     /* console.log("entering launch.html with full URL" + window.location.href);
       //window.location.href
       var iss = "iss"; 
      var query = location.search.substr(1);
@@ -58,8 +58,8 @@
       fetch(newURL)
         .catch(error => {
           console.error("Error hitting given end point " + error);
-        });
-
+        }); 
+    
 
         //const queryString = window.location.search;
       //const urlParams = new URLSearchParams(queryString);
@@ -67,13 +67,13 @@
           //const queryString = window.location.search;
       //const urlParams = new URLSearchParams(queryString);
 
-
+   */
       
       
-     // FHIR.oauth2.authorize({
-       // 'client_id': '3188bcd2-4165-4d2b-aaab-2d42a05628c9',
-       // 'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
-      //});
+     FHIR.oauth2.authorize({
+        'client_id': '3188bcd2-4165-4d2b-aaab-2d42a05628c9',
+        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+      });
     </script>
     <div class="spinner">
       <div class="bounce1"></div>
